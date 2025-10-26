@@ -1,8 +1,10 @@
 Folder PATH listing for volume OS
 Volume serial number is D0D4-9EB9
 C:.
+|   .gitignore
 |   alembic.ini
 |   estructura.txt
+|   requirements.txt
 |   
 +---.vscode
 |       settings.json
@@ -18,32 +20,63 @@ C:.
 |   |   __init__.py
 |   |   
 |   +---application
+|   |   |   __init__.py
+|   |   |   
 |   |   +---dto
+|   |   |       __init__.py
+|   |   |       
 |   |   \---use_cases
+|   |           __init__.py
+|   |           
 |   +---core
+|   |       __init__.py
+|   |       
 |   +---domain
+|   |   |   __init__.py
+|   |   |   
 |   |   +---entities
 |   |   |       task.py
+|   |   |       __init__.py
 |   |   |       
 |   |   +---repositories
+|   |   |       __init__.py
+|   |   |       
 |   |   \---value_objects
-|   +---infrastucture
+|   |           __init__.py
+|   |           
+|   +---infrastructure
+|   |   |   __init__.py
+|   |   |   
 |   |   +---database
+|   |   |   |   .env
 |   |   |   |   config.py
-|   |   |   |   connection.py
+|   |   |   |   database.py
+|   |   |   |   __init__.py
 |   |   |   |   
-|   |   |   \---orm_models
-|   |   |           task_model.py
+|   |   |   +---orm_models
+|   |   |   |       task_model.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   \---__pycache__
+|   |   |           config.cpython-311.pyc
 |   |   |           
 |   |   +---mappers
 |   |   |       task_mapper.py
+|   |   |       __init__.py
 |   |   |       
 |   |   \---repositories
 |   |           task_repository_impl.py
+|   |           __init__.py
 |   |           
 |   \---presentation
+|       |   __init__.py
+|       |   
 |       +---api
+|       |       __init__.py
+|       |       
 |       \---schemas
+|               __init__.py
+|               
 \---venv
     |   pyvenv.cfg
     |   
@@ -648,6 +681,27 @@ C:.
     |       |   |   
     |       |   \---licenses
     |       |           LICENSE.txt
+    |       |           
+    |       +---dotenv
+    |       |   |   cli.py
+    |       |   |   ipython.py
+    |       |   |   main.py
+    |       |   |   parser.py
+    |       |   |   py.typed
+    |       |   |   variables.py
+    |       |   |   version.py
+    |       |   |   __init__.py
+    |       |   |   __main__.py
+    |       |   |   
+    |       |   \---__pycache__
+    |       |           cli.cpython-311.pyc
+    |       |           ipython.cpython-311.pyc
+    |       |           main.cpython-311.pyc
+    |       |           parser.cpython-311.pyc
+    |       |           variables.cpython-311.pyc
+    |       |           version.cpython-311.pyc
+    |       |           __init__.cpython-311.pyc
+    |       |           __main__.cpython-311.pyc
     |       |           
     |       +---fastapi
     |       |   |   applications.py
@@ -2620,6 +2674,82 @@ C:.
     |       |   \---licenses
     |       |           LICENSE
     |       |           
+    |       +---pydantic_settings
+    |       |   |   exceptions.py
+    |       |   |   main.py
+    |       |   |   py.typed
+    |       |   |   utils.py
+    |       |   |   version.py
+    |       |   |   __init__.py
+    |       |   |   
+    |       |   +---sources
+    |       |   |   |   base.py
+    |       |   |   |   types.py
+    |       |   |   |   utils.py
+    |       |   |   |   __init__.py
+    |       |   |   |   
+    |       |   |   +---providers
+    |       |   |   |   |   aws.py
+    |       |   |   |   |   azure.py
+    |       |   |   |   |   cli.py
+    |       |   |   |   |   dotenv.py
+    |       |   |   |   |   env.py
+    |       |   |   |   |   gcp.py
+    |       |   |   |   |   json.py
+    |       |   |   |   |   pyproject.py
+    |       |   |   |   |   secrets.py
+    |       |   |   |   |   toml.py
+    |       |   |   |   |   yaml.py
+    |       |   |   |   |   __init__.py
+    |       |   |   |   |   
+    |       |   |   |   \---__pycache__
+    |       |   |   |           aws.cpython-311.pyc
+    |       |   |   |           azure.cpython-311.pyc
+    |       |   |   |           cli.cpython-311.pyc
+    |       |   |   |           dotenv.cpython-311.pyc
+    |       |   |   |           env.cpython-311.pyc
+    |       |   |   |           gcp.cpython-311.pyc
+    |       |   |   |           json.cpython-311.pyc
+    |       |   |   |           pyproject.cpython-311.pyc
+    |       |   |   |           secrets.cpython-311.pyc
+    |       |   |   |           toml.cpython-311.pyc
+    |       |   |   |           yaml.cpython-311.pyc
+    |       |   |   |           __init__.cpython-311.pyc
+    |       |   |   |           
+    |       |   |   \---__pycache__
+    |       |   |           base.cpython-311.pyc
+    |       |   |           types.cpython-311.pyc
+    |       |   |           utils.cpython-311.pyc
+    |       |   |           __init__.cpython-311.pyc
+    |       |   |           
+    |       |   \---__pycache__
+    |       |           exceptions.cpython-311.pyc
+    |       |           main.cpython-311.pyc
+    |       |           utils.cpython-311.pyc
+    |       |           version.cpython-311.pyc
+    |       |           __init__.cpython-311.pyc
+    |       |           
+    |       +---pydantic_settings-2.11.0.dist-info
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   REQUESTED
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           
+    |       +---python_dotenv-1.1.1.dist-info
+    |       |   |   entry_points.txt
+    |       |   |   INSTALLER
+    |       |   |   METADATA
+    |       |   |   RECORD
+    |       |   |   top_level.txt
+    |       |   |   WHEEL
+    |       |   |   
+    |       |   \---licenses
+    |       |           LICENSE
+    |       |           
     |       +---setuptools
     |       |   |   archive_util.py
     |       |   |   build_meta.py
@@ -3981,6 +4111,7 @@ C:.
             Activate.ps1
             alembic.exe
             deactivate.bat
+            dotenv.exe
             fastapi.exe
             mako-render.exe
             pip.exe
